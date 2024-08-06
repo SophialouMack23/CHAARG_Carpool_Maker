@@ -1,1 +1,291 @@
+body {
+  background-color: #f9d4d0ff;
+  margin: 0;
+}
+.top-bar {
+    background-color: #fef2f0ff; /* Set the background color of the bar */
+    padding: 1%;
+    color: #fff; /* Set the text color of the bar */
+    text-align: left; /* Center-align the text within the bar */
+}
+
+h1 {
+  color: #ea5458ff;
+  padding-left: 5px;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 2em; /* You can adjust the size as needed */
+}
+
+h2 {
+  color: #ea5458ff;
+  padding-left: 5px;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.7em; /* You can adjust the size as needed */
+}
+
+
+p {
+  color: #ea5458ff;
+  padding-left: 5px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.fileInputLabel {
+  margin: 1%;
+  color: #595959;
+  padding: 1%;
+  border-radius: 10px;
+  font-family: 'Questrial', sans-serif;
+  background-color: #fef2f0ff;
+  border: 1px solid #fef2f0ff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.fileInputLabel span {
+  padding: 0.5em 1em; /* Adjust padding as needed */
+}
+
+/* Add hover effect for better user experience */
+.fileInputLabel:hover {
+  background-color: #fddad6ff;
+  border-color: #ea5458ff;
+}
+
+button {
+  margin: 1%;
+  color: #595959;
+  padding: 1%;
+  border-radius: 10px;
+  font-family: 'Questrial', sans-serif;
+  background-color: #fef2f0ff;
+  border: 1px solid #fef2f0ff; /* Add border to match the Process File button */
+  cursor: pointer; /* Add pointer cursor for better interaction */
+}
+button:hover {
+  background-color: #fddad6ff; /* Change background color on hover */
+  border-color: #ea5458ff; /* Change border color on hover */
+}
+
+/* Style for form input */
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: 'Questrial', sans-serif;
+}
+
+/* Add focus styling for better user experience */
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px #ea5458ff; /* Adjust the color as needed */
+  border-color: #ea5458ff; /* Adjust the color as needed */
+}
+
+input[type="submit"] {
+  margin: 1%;
+  color: #595959;
+  padding: 1%;
+  border-radius: 10px;
+  font-family: 'Questrial', sans-serif;
+  background-color: #fef2f0ff;
+  border: 1px solid #fef2f0ff; /* Add border to match the Process File button */
+  cursor: pointer; /* Add pointer cursor for better interaction */
+}
+
+/* Add hover effect for better user experience */
+input[type="submit"]:hover {
+  background-color: #fddad6ff; /* Change background color on hover */
+  border-color: #ea5458ff; /* Change border color on hover */
+}
+
+input[type="file"] {
+  margin: 1%;
+  color: #595959;
+  padding: 1%;
+  border-radius: 10px;
+  font-family: 'Questrial', sans-serif;
+  background-color: #fef2f0ff;
+  border: 1px solid #fef2f0ff; /* Add border to match the Process File button */
+  cursor: pointer; /* Add pointer cursor for better interaction */
+}
+
+/* Add hover effect for better user experience */
+input[type="file"]:hover {
+  background-color: #fddad6ff; /* Change background color on hover */
+  border-color: #ea5458ff; /* Change border color on hover */
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  cursor: pointer;
+  outline: none;
+  padding: 8px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  user-select: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+summary {
+  margin: 2em;
+  margin-bottom: 5em;
+  cursor: pointer;
+  outline: none;
+  padding: 8px;
+  background-color: #fef2f0ff;
+  border: 1px solid #fef2f0ff;
+  user-select: none;
+  color: #595959;
+  border-radius: 10px;
+  font-family: 'Questrial', sans-serif;
+}
+
+/* Add hover effect for better user experience */
+summary:hover {
+  background-color: #ea5458ff; /* Adjust the color as needed */
+  color: #fff; /* Adjust the color as needed */
+  border-color: #ea5458ff; /* Adjust the color as needed */
+}
+
+footer {
+  background-color: #fef2f0ff; /* Set the background color of the footer */
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #595959; /* Set the text color of the footer */
+  font-family: 'Questrial', sans-serif;
+}
+
+.carpool-container {
+  border: 2px solid #ea5458ff;
+  border-radius: 10px;
+  margin: 10px; /* Adjust spacing between carpool boxes */
+  padding: 10px;
+}
+
+.carpool-container p {
+  margin: 2%;
+  color: #595959;
+  font-family: 'Questrial', sans-serif;
+}
+
+/* Additional styling for better appearance */
+.carpool-container h3 {
+  color: #595959;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1em;
+}
+
+
+
+.noRides-container {
+  border-color: #f9d4d0ff;
+  color: #fef2f0ff; /* Set the background color of the carpool box */
+  border-radius: 10px;
+  margin: 10px; /* Adjust spacing between carpool boxes */
+}
+
+.noRides-container h2 {
+  color: #ea5458ff;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.5em;
+}
+
+.noRides-container p {
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  color: #ea5458ff;
+}
+
 
