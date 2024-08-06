@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/style.css" />
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAARG Carpool Maker</title>
+    <div class="top-bar">
+  <body>
+      <h1>
+        ⚡CHAARG Carpool Maker⚡
+      </h1>
+    </div>
+  </head>
+
+    <center>
+      
+      <h2 id="outputTitle">
+        Upload your file to get started!
+      </h2>
+      <p id="outputSubTitle">
+        Please make sure it’s a CSV file and all the info is correct
+      </p>
+      
+      <label for="fileInput" class="fileInputLabel" id="chooseFileLabel">
+        <span>Choose File</span>
+      </label>
+      
+      <input type="file" id="fileInput" accept=".csv" style="display: none;">
+      <button onclick="displayInfo(fileInput)">Process File</button>
+
+      
+        </div>
+        <div id="outputText"></div>
+        <div id="outputQuestions"></div>
+        <div id="outputCarpools"></div>
+
+        <div>
+          
+        </div>
+        
+        <details>
+            <summary>Click to see your uploaded data</summary>
+            <table id="dataTable"></table>
+            <div id="outputData"></div>
+        </details>
+        
+        <script src="script.js"></script>
+        </center>
+
+    <footer>
+      <p>
+        Created by Sophia Mack
+      </p>
+    </footer>
+  </body>
+</html>
 
